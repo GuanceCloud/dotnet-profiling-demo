@@ -1,0 +1,1124 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Datadog.Trace/2.33.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.4.1"
+        },
+        "compile": {
+          "lib/net6.0/Datadog.Trace.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Datadog.Trace.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Datadog.Trace.Bundle/2.33.0": {
+        "type": "package",
+        "dependencies": {
+          "Datadog.Trace": "2.33.0"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/datadog/createLogPath.sh": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/createLogPath.sh"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Profiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Profiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/Datadog.Tracer.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/Datadog.Tracer.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/libddwaf.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/libddwaf.so"
+          },
+          "contentFiles/any/any/datadog/linux-arm64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-arm64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Profiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Profiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Tracer.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/Datadog.Tracer.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/libddwaf.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/libddwaf.so"
+          },
+          "contentFiles/any/any/datadog/linux-musl-x64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-musl-x64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Profiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Profiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/Datadog.Tracer.Native.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/Datadog.Tracer.Native.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/libddwaf.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/libddwaf.so"
+          },
+          "contentFiles/any/any/datadog/linux-x64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/linux-x64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.AspNet.dll"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.AspNet.pdb"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/net461/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net461/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.MSBuild.deps.json"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/net6.0/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/net6.0/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netcoreapp3.1/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.MSBuild.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.pdb": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/Datadog.Trace.pdb"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Reflection.Emit.dll"
+          },
+          "contentFiles/any/any/datadog/netstandard2.0/System.Threading.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/netstandard2.0/System.Threading.dll"
+          },
+          "contentFiles/any/any/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib"
+          },
+          "contentFiles/any/any/datadog/osx/Datadog.Tracer.Native.dylib": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/Datadog.Tracer.Native.dylib"
+          },
+          "contentFiles/any/any/datadog/osx/libddwaf.dylib": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/libddwaf.dylib"
+          },
+          "contentFiles/any/any/datadog/osx/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/osx/loader.conf"
+          },
+          "contentFiles/any/any/datadog/win-x64/Datadog.Profiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/Datadog.Profiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/Datadog.Tracer.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/Datadog.Tracer.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/ddwaf.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/ddwaf.dll"
+          },
+          "contentFiles/any/any/datadog/win-x64/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x64/loader.conf"
+          },
+          "contentFiles/any/any/datadog/win-x86/Datadog.Profiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/Datadog.Profiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/Datadog.Tracer.Native.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/Datadog.Tracer.Native.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/ddwaf.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/ddwaf.dll"
+          },
+          "contentFiles/any/any/datadog/win-x86/loader.conf": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "datadog/win-x86/loader.conf"
+          }
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
+          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
+        }
+      },
+      "Microsoft.OpenApi/1.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0"
+        },
+        "build": {
+          "build/Swashbuckle.AspNetCore.props": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.2.3"
+        },
+        "compile": {
+          "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.5.0"
+        },
+        "compile": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "System.Diagnostics.DiagnosticSource/4.4.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Datadog.Trace/2.33.0": {
+      "sha512": "XTg7AQh5NDEJNxZoPGByULXf1nDKy4Kgjd0/RDJBSgSckG653Wp5mrKCwA9sFBPZyU7HhlarZ8lwIpLLgZrOxg==",
+      "type": "package",
+      "path": "datadog.trace/2.33.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "datadog.trace.2.33.0.nupkg.sha512",
+        "datadog.trace.nuspec",
+        "lib/net461/Datadog.Trace.dll",
+        "lib/net461/Datadog.Trace.xml",
+        "lib/net6.0/Datadog.Trace.dll",
+        "lib/net6.0/Datadog.Trace.xml",
+        "lib/netcoreapp3.1/Datadog.Trace.dll",
+        "lib/netcoreapp3.1/Datadog.Trace.xml",
+        "lib/netstandard2.0/Datadog.Trace.dll",
+        "lib/netstandard2.0/Datadog.Trace.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Datadog.Trace.Bundle/2.33.0": {
+      "sha512": "ThqtBusCTSlChA8iOZLs3stdqCijUehgg3fd1VuedVkyrAvXrV9qDaP7RKBfmdQUar4T95qqMobIb6liWsPG1Q==",
+      "type": "package",
+      "path": "datadog.trace.bundle/2.33.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "content/datadog/createLogPath.sh",
+        "content/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so",
+        "content/datadog/linux-arm64/Datadog.Profiler.Native.so",
+        "content/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so",
+        "content/datadog/linux-arm64/Datadog.Tracer.Native.so",
+        "content/datadog/linux-arm64/libddwaf.so",
+        "content/datadog/linux-arm64/loader.conf",
+        "content/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "content/datadog/linux-musl-x64/Datadog.Profiler.Native.so",
+        "content/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "content/datadog/linux-musl-x64/Datadog.Tracer.Native.so",
+        "content/datadog/linux-musl-x64/libddwaf.so",
+        "content/datadog/linux-musl-x64/loader.conf",
+        "content/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "content/datadog/linux-x64/Datadog.Profiler.Native.so",
+        "content/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "content/datadog/linux-x64/Datadog.Tracer.Native.so",
+        "content/datadog/linux-x64/libddwaf.so",
+        "content/datadog/linux-x64/loader.conf",
+        "content/datadog/net461/Datadog.Trace.AspNet.dll",
+        "content/datadog/net461/Datadog.Trace.AspNet.pdb",
+        "content/datadog/net461/Datadog.Trace.MSBuild.dll",
+        "content/datadog/net461/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/net461/Datadog.Trace.dll",
+        "content/datadog/net461/Datadog.Trace.pdb",
+        "content/datadog/net6.0/Datadog.Trace.MSBuild.deps.json",
+        "content/datadog/net6.0/Datadog.Trace.MSBuild.dll",
+        "content/datadog/net6.0/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/net6.0/Datadog.Trace.dll",
+        "content/datadog/net6.0/Datadog.Trace.pdb",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.dll",
+        "content/datadog/netcoreapp3.1/Datadog.Trace.pdb",
+        "content/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json",
+        "content/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll",
+        "content/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb",
+        "content/datadog/netstandard2.0/Datadog.Trace.dll",
+        "content/datadog/netstandard2.0/Datadog.Trace.pdb",
+        "content/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "content/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "content/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "content/datadog/netstandard2.0/System.Reflection.Emit.dll",
+        "content/datadog/netstandard2.0/System.Threading.dll",
+        "content/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib",
+        "content/datadog/osx/Datadog.Tracer.Native.dylib",
+        "content/datadog/osx/libddwaf.dylib",
+        "content/datadog/osx/loader.conf",
+        "content/datadog/win-x64/Datadog.Profiler.Native.dll",
+        "content/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll",
+        "content/datadog/win-x64/Datadog.Tracer.Native.dll",
+        "content/datadog/win-x64/ddwaf.dll",
+        "content/datadog/win-x64/loader.conf",
+        "content/datadog/win-x86/Datadog.Profiler.Native.dll",
+        "content/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll",
+        "content/datadog/win-x86/Datadog.Tracer.Native.dll",
+        "content/datadog/win-x86/ddwaf.dll",
+        "content/datadog/win-x86/loader.conf",
+        "contentFiles/any/any/datadog/createLogPath.sh",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Profiler.Native.so",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so",
+        "contentFiles/any/any/datadog/linux-arm64/Datadog.Tracer.Native.so",
+        "contentFiles/any/any/datadog/linux-arm64/libddwaf.so",
+        "contentFiles/any/any/datadog/linux-arm64/loader.conf",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Profiler.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/Datadog.Tracer.Native.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/libddwaf.so",
+        "contentFiles/any/any/datadog/linux-musl-x64/loader.conf",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Profiler.Native.so",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so",
+        "contentFiles/any/any/datadog/linux-x64/Datadog.Tracer.Native.so",
+        "contentFiles/any/any/datadog/linux-x64/libddwaf.so",
+        "contentFiles/any/any/datadog/linux-x64/loader.conf",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.dll",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.pdb",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/net461/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.deps.json",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/net6.0/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.pdb",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.dll",
+        "contentFiles/any/any/datadog/netstandard2.0/System.Threading.dll",
+        "contentFiles/any/any/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib",
+        "contentFiles/any/any/datadog/osx/Datadog.Tracer.Native.dylib",
+        "contentFiles/any/any/datadog/osx/libddwaf.dylib",
+        "contentFiles/any/any/datadog/osx/loader.conf",
+        "contentFiles/any/any/datadog/win-x64/Datadog.Profiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x64/Datadog.Tracer.Native.dll",
+        "contentFiles/any/any/datadog/win-x64/ddwaf.dll",
+        "contentFiles/any/any/datadog/win-x64/loader.conf",
+        "contentFiles/any/any/datadog/win-x86/Datadog.Profiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll",
+        "contentFiles/any/any/datadog/win-x86/Datadog.Tracer.Native.dll",
+        "contentFiles/any/any/datadog/win-x86/ddwaf.dll",
+        "contentFiles/any/any/datadog/win-x86/loader.conf",
+        "datadog.trace.bundle.2.33.0.nupkg.sha512",
+        "datadog.trace.bundle.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
+      "sha512": "Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
+      "type": "package",
+      "path": "microsoft.extensions.apidescription.server/6.0.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/Microsoft.Extensions.ApiDescription.Server.props",
+        "build/Microsoft.Extensions.ApiDescription.Server.targets",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
+        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
+        "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+        "microsoft.extensions.apidescription.server.nuspec",
+        "tools/Newtonsoft.Json.dll",
+        "tools/dotnet-getdocument.deps.json",
+        "tools/dotnet-getdocument.dll",
+        "tools/dotnet-getdocument.runtimeconfig.json",
+        "tools/net461-x86/GetDocument.Insider.exe",
+        "tools/net461-x86/GetDocument.Insider.exe.config",
+        "tools/net461-x86/Microsoft.Win32.Primitives.dll",
+        "tools/net461-x86/System.AppContext.dll",
+        "tools/net461-x86/System.Buffers.dll",
+        "tools/net461-x86/System.Collections.Concurrent.dll",
+        "tools/net461-x86/System.Collections.NonGeneric.dll",
+        "tools/net461-x86/System.Collections.Specialized.dll",
+        "tools/net461-x86/System.Collections.dll",
+        "tools/net461-x86/System.ComponentModel.EventBasedAsync.dll",
+        "tools/net461-x86/System.ComponentModel.Primitives.dll",
+        "tools/net461-x86/System.ComponentModel.TypeConverter.dll",
+        "tools/net461-x86/System.ComponentModel.dll",
+        "tools/net461-x86/System.Console.dll",
+        "tools/net461-x86/System.Data.Common.dll",
+        "tools/net461-x86/System.Diagnostics.Contracts.dll",
+        "tools/net461-x86/System.Diagnostics.Debug.dll",
+        "tools/net461-x86/System.Diagnostics.DiagnosticSource.dll",
+        "tools/net461-x86/System.Diagnostics.FileVersionInfo.dll",
+        "tools/net461-x86/System.Diagnostics.Process.dll",
+        "tools/net461-x86/System.Diagnostics.StackTrace.dll",
+        "tools/net461-x86/System.Diagnostics.TextWriterTraceListener.dll",
+        "tools/net461-x86/System.Diagnostics.Tools.dll",
+        "tools/net461-x86/System.Diagnostics.TraceSource.dll",
+        "tools/net461-x86/System.Diagnostics.Tracing.dll",
+        "tools/net461-x86/System.Drawing.Primitives.dll",
+        "tools/net461-x86/System.Dynamic.Runtime.dll",
+        "tools/net461-x86/System.Globalization.Calendars.dll",
+        "tools/net461-x86/System.Globalization.Extensions.dll",
+        "tools/net461-x86/System.Globalization.dll",
+        "tools/net461-x86/System.IO.Compression.ZipFile.dll",
+        "tools/net461-x86/System.IO.Compression.dll",
+        "tools/net461-x86/System.IO.FileSystem.DriveInfo.dll",
+        "tools/net461-x86/System.IO.FileSystem.Primitives.dll",
+        "tools/net461-x86/System.IO.FileSystem.Watcher.dll",
+        "tools/net461-x86/System.IO.FileSystem.dll",
+        "tools/net461-x86/System.IO.IsolatedStorage.dll",
+        "tools/net461-x86/System.IO.MemoryMappedFiles.dll",
+        "tools/net461-x86/System.IO.Pipes.dll",
+        "tools/net461-x86/System.IO.UnmanagedMemoryStream.dll",
+        "tools/net461-x86/System.IO.dll",
+        "tools/net461-x86/System.Linq.Expressions.dll",
+        "tools/net461-x86/System.Linq.Parallel.dll",
+        "tools/net461-x86/System.Linq.Queryable.dll",
+        "tools/net461-x86/System.Linq.dll",
+        "tools/net461-x86/System.Memory.dll",
+        "tools/net461-x86/System.Net.Http.dll",
+        "tools/net461-x86/System.Net.NameResolution.dll",
+        "tools/net461-x86/System.Net.NetworkInformation.dll",
+        "tools/net461-x86/System.Net.Ping.dll",
+        "tools/net461-x86/System.Net.Primitives.dll",
+        "tools/net461-x86/System.Net.Requests.dll",
+        "tools/net461-x86/System.Net.Security.dll",
+        "tools/net461-x86/System.Net.Sockets.dll",
+        "tools/net461-x86/System.Net.WebHeaderCollection.dll",
+        "tools/net461-x86/System.Net.WebSockets.Client.dll",
+        "tools/net461-x86/System.Net.WebSockets.dll",
+        "tools/net461-x86/System.Numerics.Vectors.dll",
+        "tools/net461-x86/System.ObjectModel.dll",
+        "tools/net461-x86/System.Reflection.Extensions.dll",
+        "tools/net461-x86/System.Reflection.Primitives.dll",
+        "tools/net461-x86/System.Reflection.dll",
+        "tools/net461-x86/System.Resources.Reader.dll",
+        "tools/net461-x86/System.Resources.ResourceManager.dll",
+        "tools/net461-x86/System.Resources.Writer.dll",
+        "tools/net461-x86/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net461-x86/System.Runtime.CompilerServices.VisualC.dll",
+        "tools/net461-x86/System.Runtime.Extensions.dll",
+        "tools/net461-x86/System.Runtime.Handles.dll",
+        "tools/net461-x86/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "tools/net461-x86/System.Runtime.InteropServices.dll",
+        "tools/net461-x86/System.Runtime.Numerics.dll",
+        "tools/net461-x86/System.Runtime.Serialization.Formatters.dll",
+        "tools/net461-x86/System.Runtime.Serialization.Json.dll",
+        "tools/net461-x86/System.Runtime.Serialization.Primitives.dll",
+        "tools/net461-x86/System.Runtime.Serialization.Xml.dll",
+        "tools/net461-x86/System.Runtime.dll",
+        "tools/net461-x86/System.Security.Claims.dll",
+        "tools/net461-x86/System.Security.Cryptography.Algorithms.dll",
+        "tools/net461-x86/System.Security.Cryptography.Csp.dll",
+        "tools/net461-x86/System.Security.Cryptography.Encoding.dll",
+        "tools/net461-x86/System.Security.Cryptography.Primitives.dll",
+        "tools/net461-x86/System.Security.Cryptography.X509Certificates.dll",
+        "tools/net461-x86/System.Security.Principal.dll",
+        "tools/net461-x86/System.Security.SecureString.dll",
+        "tools/net461-x86/System.Text.Encoding.Extensions.dll",
+        "tools/net461-x86/System.Text.Encoding.dll",
+        "tools/net461-x86/System.Text.RegularExpressions.dll",
+        "tools/net461-x86/System.Threading.Overlapped.dll",
+        "tools/net461-x86/System.Threading.Tasks.Parallel.dll",
+        "tools/net461-x86/System.Threading.Tasks.dll",
+        "tools/net461-x86/System.Threading.Thread.dll",
+        "tools/net461-x86/System.Threading.ThreadPool.dll",
+        "tools/net461-x86/System.Threading.Timer.dll",
+        "tools/net461-x86/System.Threading.dll",
+        "tools/net461-x86/System.ValueTuple.dll",
+        "tools/net461-x86/System.Xml.ReaderWriter.dll",
+        "tools/net461-x86/System.Xml.XDocument.dll",
+        "tools/net461-x86/System.Xml.XPath.XDocument.dll",
+        "tools/net461-x86/System.Xml.XPath.dll",
+        "tools/net461-x86/System.Xml.XmlDocument.dll",
+        "tools/net461-x86/System.Xml.XmlSerializer.dll",
+        "tools/net461-x86/netstandard.dll",
+        "tools/net461/GetDocument.Insider.exe",
+        "tools/net461/GetDocument.Insider.exe.config",
+        "tools/net461/Microsoft.Win32.Primitives.dll",
+        "tools/net461/System.AppContext.dll",
+        "tools/net461/System.Buffers.dll",
+        "tools/net461/System.Collections.Concurrent.dll",
+        "tools/net461/System.Collections.NonGeneric.dll",
+        "tools/net461/System.Collections.Specialized.dll",
+        "tools/net461/System.Collections.dll",
+        "tools/net461/System.ComponentModel.EventBasedAsync.dll",
+        "tools/net461/System.ComponentModel.Primitives.dll",
+        "tools/net461/System.ComponentModel.TypeConverter.dll",
+        "tools/net461/System.ComponentModel.dll",
+        "tools/net461/System.Console.dll",
+        "tools/net461/System.Data.Common.dll",
+        "tools/net461/System.Diagnostics.Contracts.dll",
+        "tools/net461/System.Diagnostics.Debug.dll",
+        "tools/net461/System.Diagnostics.DiagnosticSource.dll",
+        "tools/net461/System.Diagnostics.FileVersionInfo.dll",
+        "tools/net461/System.Diagnostics.Process.dll",
+        "tools/net461/System.Diagnostics.StackTrace.dll",
+        "tools/net461/System.Diagnostics.TextWriterTraceListener.dll",
+        "tools/net461/System.Diagnostics.Tools.dll",
+        "tools/net461/System.Diagnostics.TraceSource.dll",
+        "tools/net461/System.Diagnostics.Tracing.dll",
+        "tools/net461/System.Drawing.Primitives.dll",
+        "tools/net461/System.Dynamic.Runtime.dll",
+        "tools/net461/System.Globalization.Calendars.dll",
+        "tools/net461/System.Globalization.Extensions.dll",
+        "tools/net461/System.Globalization.dll",
+        "tools/net461/System.IO.Compression.ZipFile.dll",
+        "tools/net461/System.IO.Compression.dll",
+        "tools/net461/System.IO.FileSystem.DriveInfo.dll",
+        "tools/net461/System.IO.FileSystem.Primitives.dll",
+        "tools/net461/System.IO.FileSystem.Watcher.dll",
+        "tools/net461/System.IO.FileSystem.dll",
+        "tools/net461/System.IO.IsolatedStorage.dll",
+        "tools/net461/System.IO.MemoryMappedFiles.dll",
+        "tools/net461/System.IO.Pipes.dll",
+        "tools/net461/System.IO.UnmanagedMemoryStream.dll",
+        "tools/net461/System.IO.dll",
+        "tools/net461/System.Linq.Expressions.dll",
+        "tools/net461/System.Linq.Parallel.dll",
+        "tools/net461/System.Linq.Queryable.dll",
+        "tools/net461/System.Linq.dll",
+        "tools/net461/System.Memory.dll",
+        "tools/net461/System.Net.Http.dll",
+        "tools/net461/System.Net.NameResolution.dll",
+        "tools/net461/System.Net.NetworkInformation.dll",
+        "tools/net461/System.Net.Ping.dll",
+        "tools/net461/System.Net.Primitives.dll",
+        "tools/net461/System.Net.Requests.dll",
+        "tools/net461/System.Net.Security.dll",
+        "tools/net461/System.Net.Sockets.dll",
+        "tools/net461/System.Net.WebHeaderCollection.dll",
+        "tools/net461/System.Net.WebSockets.Client.dll",
+        "tools/net461/System.Net.WebSockets.dll",
+        "tools/net461/System.Numerics.Vectors.dll",
+        "tools/net461/System.ObjectModel.dll",
+        "tools/net461/System.Reflection.Extensions.dll",
+        "tools/net461/System.Reflection.Primitives.dll",
+        "tools/net461/System.Reflection.dll",
+        "tools/net461/System.Resources.Reader.dll",
+        "tools/net461/System.Resources.ResourceManager.dll",
+        "tools/net461/System.Resources.Writer.dll",
+        "tools/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net461/System.Runtime.CompilerServices.VisualC.dll",
+        "tools/net461/System.Runtime.Extensions.dll",
+        "tools/net461/System.Runtime.Handles.dll",
+        "tools/net461/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "tools/net461/System.Runtime.InteropServices.dll",
+        "tools/net461/System.Runtime.Numerics.dll",
+        "tools/net461/System.Runtime.Serialization.Formatters.dll",
+        "tools/net461/System.Runtime.Serialization.Json.dll",
+        "tools/net461/System.Runtime.Serialization.Primitives.dll",
+        "tools/net461/System.Runtime.Serialization.Xml.dll",
+        "tools/net461/System.Runtime.dll",
+        "tools/net461/System.Security.Claims.dll",
+        "tools/net461/System.Security.Cryptography.Algorithms.dll",
+        "tools/net461/System.Security.Cryptography.Csp.dll",
+        "tools/net461/System.Security.Cryptography.Encoding.dll",
+        "tools/net461/System.Security.Cryptography.Primitives.dll",
+        "tools/net461/System.Security.Cryptography.X509Certificates.dll",
+        "tools/net461/System.Security.Principal.dll",
+        "tools/net461/System.Security.SecureString.dll",
+        "tools/net461/System.Text.Encoding.Extensions.dll",
+        "tools/net461/System.Text.Encoding.dll",
+        "tools/net461/System.Text.RegularExpressions.dll",
+        "tools/net461/System.Threading.Overlapped.dll",
+        "tools/net461/System.Threading.Tasks.Parallel.dll",
+        "tools/net461/System.Threading.Tasks.dll",
+        "tools/net461/System.Threading.Thread.dll",
+        "tools/net461/System.Threading.ThreadPool.dll",
+        "tools/net461/System.Threading.Timer.dll",
+        "tools/net461/System.Threading.dll",
+        "tools/net461/System.ValueTuple.dll",
+        "tools/net461/System.Xml.ReaderWriter.dll",
+        "tools/net461/System.Xml.XDocument.dll",
+        "tools/net461/System.Xml.XPath.XDocument.dll",
+        "tools/net461/System.Xml.XPath.dll",
+        "tools/net461/System.Xml.XmlDocument.dll",
+        "tools/net461/System.Xml.XmlSerializer.dll",
+        "tools/net461/netstandard.dll",
+        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
+        "tools/netcoreapp2.1/GetDocument.Insider.dll",
+        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json",
+        "tools/netcoreapp2.1/System.Diagnostics.DiagnosticSource.dll"
+      ]
+    },
+    "Microsoft.OpenApi/1.2.3": {
+      "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
+      "type": "package",
+      "path": "microsoft.openapi/1.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Microsoft.OpenApi.dll",
+        "lib/net46/Microsoft.OpenApi.pdb",
+        "lib/net46/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.2.3.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Swashbuckle.AspNetCore/6.5.0": {
+      "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/6.5.0": {
+      "sha512": "XWmCmqyFmoItXKFsQSwQbEAsjDKcxlNf1l+/Ki42hcb6LjKL8m5Db69OTvz5vLonMSRntYO1XLqz0OP+n3vKnA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/6.5.0": {
+      "sha512": "Y/qW8Qdg9OEs7V013tt+94OdPxbRdbhcEbw4NiwGvf4YBcfhL/y7qp/Mjv/cENsQ2L3NqJ2AOu94weBy/h4KvA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/6.5.0": {
+      "sha512": "OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.4.1": {
+      "sha512": "U/KcC19fyLsPN1GLmeU2zQq15MMVcPwMOYPADVo1+WIoJpvMHxrzvl+BLLZwTEZSneGwaPFZ0aWr0nJ7B7LSdA==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "ref/netcoreapp2.0/_._",
+        "system.diagnostics.diagnosticsource.4.4.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Datadog.Trace.Bundle >= 2.33.0",
+      "Newtonsoft.Json >= 13.0.3",
+      "Swashbuckle.AspNetCore >= 6.5.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/zy/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/zy/project/dotnet-profiling-demo/dotnet-profiling-demo.csproj",
+      "projectName": "dotnet-profiling-demo",
+      "projectPath": "/Users/zy/project/dotnet-profiling-demo/dotnet-profiling-demo.csproj",
+      "packagesPath": "/Users/zy/.nuget/packages/",
+      "outputPath": "/Users/zy/project/dotnet-profiling-demo/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/zy/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "Datadog.Trace.Bundle": {
+            "target": "Package",
+            "version": "[2.33.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.5.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

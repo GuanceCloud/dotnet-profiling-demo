@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "S345HwYawVQkBokUryR2Lb0ASDFPBtcvWRQmVsxl49o=",
+  "Source": "dotnet-profiling-demo",
+  "BasePath": "_content/dotnet-profiling-demo",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/zy/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/zy/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.6.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/zy/.nuget/packages/" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/createLogPath.sh" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/createLogPath.sh')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/createLogPath.sh</TargetPath>
+      <DestinationSubDirectory>datadog/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/createLogPath.sh</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-arm64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-arm64/Datadog.Linux.ApiWrapper.x64.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Profiler.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Profiler.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-arm64/Datadog.Profiler.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-arm64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-arm64/Datadog.Profiler.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-arm64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-arm64/Datadog.Trace.ClrProfiler.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Tracer.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/Datadog.Tracer.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-arm64/Datadog.Tracer.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-arm64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-arm64/Datadog.Tracer.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/libddwaf.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/libddwaf.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-arm64/libddwaf.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-arm64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-arm64/libddwaf.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/loader.conf" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-arm64/loader.conf')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-arm64/loader.conf</TargetPath>
+      <DestinationSubDirectory>datadog/linux-arm64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-arm64/loader.conf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-musl-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-musl-x64/Datadog.Linux.ApiWrapper.x64.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Profiler.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Profiler.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-musl-x64/Datadog.Profiler.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-musl-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-musl-x64/Datadog.Profiler.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-musl-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-musl-x64/Datadog.Trace.ClrProfiler.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Tracer.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/Datadog.Tracer.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-musl-x64/Datadog.Tracer.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-musl-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-musl-x64/Datadog.Tracer.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/libddwaf.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/libddwaf.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-musl-x64/libddwaf.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-musl-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-musl-x64/libddwaf.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/loader.conf" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-musl-x64/loader.conf')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-musl-x64/loader.conf</TargetPath>
+      <DestinationSubDirectory>datadog/linux-musl-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-musl-x64/loader.conf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-x64/Datadog.Linux.ApiWrapper.x64.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Profiler.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Profiler.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-x64/Datadog.Profiler.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-x64/Datadog.Profiler.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-x64/Datadog.Trace.ClrProfiler.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Tracer.Native.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/Datadog.Tracer.Native.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-x64/Datadog.Tracer.Native.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-x64/Datadog.Tracer.Native.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/libddwaf.so" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/libddwaf.so')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-x64/libddwaf.so</TargetPath>
+      <DestinationSubDirectory>datadog/linux-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-x64/libddwaf.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/loader.conf" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/linux-x64/loader.conf')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/linux-x64/loader.conf</TargetPath>
+      <DestinationSubDirectory>datadog/linux-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/linux-x64/loader.conf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net461/Datadog.Trace.AspNet.dll</TargetPath>
+      <DestinationSubDirectory>datadog/net461/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net461/Datadog.Trace.AspNet.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.AspNet.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net461/Datadog.Trace.AspNet.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/net461/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net461/Datadog.Trace.AspNet.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net461/Datadog.Trace.MSBuild.dll</TargetPath>
+      <DestinationSubDirectory>datadog/net461/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net461/Datadog.Trace.MSBuild.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.MSBuild.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net461/Datadog.Trace.MSBuild.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/net461/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net461/Datadog.Trace.MSBuild.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net461/Datadog.Trace.dll</TargetPath>
+      <DestinationSubDirectory>datadog/net461/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net461/Datadog.Trace.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net461/Datadog.Trace.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net461/Datadog.Trace.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/net461/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net461/Datadog.Trace.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.deps.json" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.deps.json')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net6.0/Datadog.Trace.MSBuild.deps.json</TargetPath>
+      <DestinationSubDirectory>datadog/net6.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net6.0/Datadog.Trace.MSBuild.deps.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net6.0/Datadog.Trace.MSBuild.dll</TargetPath>
+      <DestinationSubDirectory>datadog/net6.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net6.0/Datadog.Trace.MSBuild.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.MSBuild.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net6.0/Datadog.Trace.MSBuild.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/net6.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net6.0/Datadog.Trace.MSBuild.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net6.0/Datadog.Trace.dll</TargetPath>
+      <DestinationSubDirectory>datadog/net6.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net6.0/Datadog.Trace.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/net6.0/Datadog.Trace.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/net6.0/Datadog.Trace.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/net6.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/net6.0/Datadog.Trace.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json</TargetPath>
+      <DestinationSubDirectory>datadog/netcoreapp3.1/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netcoreapp3.1/Datadog.Trace.MSBuild.deps.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netcoreapp3.1/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netcoreapp3.1/Datadog.Trace.MSBuild.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/netcoreapp3.1/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netcoreapp3.1/Datadog.Trace.MSBuild.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netcoreapp3.1/Datadog.Trace.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netcoreapp3.1/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netcoreapp3.1/Datadog.Trace.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netcoreapp3.1/Datadog.Trace.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netcoreapp3.1/Datadog.Trace.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/netcoreapp3.1/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netcoreapp3.1/Datadog.Trace.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/Datadog.Trace.MSBuild.deps.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/Datadog.Trace.MSBuild.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/Datadog.Trace.MSBuild.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/Datadog.Trace.MSBuild.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/Datadog.Trace.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/Datadog.Trace.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.pdb" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/Datadog.Trace.pdb')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/Datadog.Trace.pdb</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/Datadog.Trace.pdb</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/System.Diagnostics.DiagnosticSource.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/System.Reflection.Emit.ILGeneration.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/System.Reflection.Emit.Lightweight.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Reflection.Emit.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/System.Reflection.Emit.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/System.Reflection.Emit.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Threading.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/netstandard2.0/System.Threading.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/netstandard2.0/System.Threading.dll</TargetPath>
+      <DestinationSubDirectory>datadog/netstandard2.0/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/netstandard2.0/System.Threading.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib</TargetPath>
+      <DestinationSubDirectory>datadog/osx/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/osx/Datadog.Trace.ClrProfiler.Native.dylib</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/Datadog.Tracer.Native.dylib" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/Datadog.Tracer.Native.dylib')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/osx/Datadog.Tracer.Native.dylib</TargetPath>
+      <DestinationSubDirectory>datadog/osx/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/osx/Datadog.Tracer.Native.dylib</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/libddwaf.dylib" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/libddwaf.dylib')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/osx/libddwaf.dylib</TargetPath>
+      <DestinationSubDirectory>datadog/osx/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/osx/libddwaf.dylib</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/loader.conf" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/osx/loader.conf')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/osx/loader.conf</TargetPath>
+      <DestinationSubDirectory>datadog/osx/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/osx/loader.conf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/Datadog.Profiler.Native.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/Datadog.Profiler.Native.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x64/Datadog.Profiler.Native.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x64/Datadog.Profiler.Native.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x64/Datadog.Trace.ClrProfiler.Native.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/Datadog.Tracer.Native.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/Datadog.Tracer.Native.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x64/Datadog.Tracer.Native.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x64/Datadog.Tracer.Native.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/ddwaf.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/ddwaf.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x64/ddwaf.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x64/ddwaf.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/loader.conf" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x64/loader.conf')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x64/loader.conf</TargetPath>
+      <DestinationSubDirectory>datadog/win-x64/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x64/loader.conf</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/Datadog.Profiler.Native.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/Datadog.Profiler.Native.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x86/Datadog.Profiler.Native.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x86/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x86/Datadog.Profiler.Native.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x86/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x86/Datadog.Trace.ClrProfiler.Native.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/Datadog.Tracer.Native.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/Datadog.Tracer.Native.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x86/Datadog.Tracer.Native.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x86/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x86/Datadog.Tracer.Native.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/ddwaf.dll" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/ddwaf.dll')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x86/ddwaf.dll</TargetPath>
+      <DestinationSubDirectory>datadog/win-x86/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x86/ddwaf.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/loader.conf" Condition="Exists('$(NuGetPackageRoot)datadog.trace.bundle/2.33.0/contentFiles/any/any/datadog/win-x86/loader.conf')">
+      <NuGetPackageId>Datadog.Trace.Bundle</NuGetPackageId>
+      <NuGetPackageVersion>2.33.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>datadog/win-x86/loader.conf</TargetPath>
+      <DestinationSubDirectory>datadog/win-x86/</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>datadog/win-x86/loader.conf</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server/6.0.5/build/Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server/6.0.5/build/Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore/6.5.0/build/Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore/6.5.0/build/Swashbuckle.AspNetCore.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">/Users/zy/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+  </PropertyGroup>
+</Project>
