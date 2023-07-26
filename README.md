@@ -28,28 +28,19 @@ total 229248
 ```
 
 ## Run
-
 ```shell
-(DDTRACE_HOME="$(pwd)/build/datadog"; 
-DD_DOTNET_TRACER_HOME="$DDTRACE_HOME" \
-CORECLR_ENABLE_PROFILING=1 \
-CORECLR_PROFILER="{846F5F1C-F9AE-4B07-969E-05C26BC060D8}" \
-CORECLR_PROFILER_PATH="$DDTRACE_HOME/linux-x64/Datadog.Trace.ClrProfiler.Native.so" \
-LD_PRELOAD="$DDTRACE_HOME/linux-x64/Datadog.Linux.ApiWrapper.x64.so" \
-DD_PROFILING_ENABLED=1 \
-DD_PROFILING_WALLTIME_ENABLED=1 \
-DD_PROFILING_CPU_ENABLED=1 \
-DD_PROFILING_EXCEPTION_ENABLED=1 \
-DD_PROFILING_ALLOCATION_ENABLED=1 \
-DD_PROFILING_LOCK_ENABLED=1 \
-DD_PROFILING_HEAP_ENABLED=1 \
-DD_PROFILING_GC_ENABLED=1 \
-DD_SERVICE=dotnet-profiling-demo DD_ENV=testing DD_VERSION=1.2.3 \
-DD_AGENT_HOST=127.0.0.1 DD_TRACE_AGENT_PORT=9529 \
-build/dotnet-profiling-demo)
+./build/dotnet-profiling-demo
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://[::]:8080
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/zhangyi/project/dotnet-profiling-demo
 ```
 
-程序启动后会监听 `8080` 端口：
+程序启动后会监听 `8080` 端口，可以利用`curl`进行测试：
 ```shell
 curl 'http://127.0.0.1:8080/movies?q=batman'
 ```
@@ -71,7 +62,33 @@ curl 'http://127.0.0.1:8080/movies?q=batman'
     "vote_average": 1.8787282761678148,
     "release_date": "2000-10-31"
   },
- ...
+  ...
 ]
-
 ```
+
+
+## Profiling
+
+- On Linux/x86-64 (arm not supported yet)
+
+```shell
+(DDTRACE_HOME="$(pwd)/build/datadog"; 
+DD_DOTNET_TRACER_HOME="$DDTRACE_HOME" \
+CORECLR_ENABLE_PROFILING=1 \
+CORECLR_PROFILER="{846F5F1C-F9AE-4B07-969E-05C26BC060D8}" \
+CORECLR_PROFILER_PATH="$DDTRACE_HOME/linux-x64/Datadog.Trace.ClrProfiler.Native.so" \
+LD_PRELOAD="$DDTRACE_HOME/linux-x64/Datadog.Linux.ApiWrapper.x64.so" \
+DD_PROFILING_ENABLED=1 \
+DD_PROFILING_WALLTIME_ENABLED=1 \
+DD_PROFILING_CPU_ENABLED=1 \
+DD_PROFILING_EXCEPTION_ENABLED=1 \
+DD_PROFILING_ALLOCATION_ENABLED=1 \
+DD_PROFILING_LOCK_ENABLED=1 \
+DD_PROFILING_HEAP_ENABLED=1 \
+DD_PROFILING_GC_ENABLED=1 \
+DD_SERVICE=dotnet-profiling-demo DD_ENV=testing DD_VERSION=1.2.3 \
+DD_AGENT_HOST=127.0.0.1 DD_TRACE_AGENT_PORT=9529 \
+build/dotnet-profiling-demo)
+```
+
+- On Windows IIS
