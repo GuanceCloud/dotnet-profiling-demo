@@ -1,29 +1,19 @@
 // Uncomment below if you want to use HTTP.sys as the server
 //#define USE_HTTP_SYS
 
-#if USE_HTTP_SYS
-
-using Microsoft.AspNetCore.Server.HttpSys;
-
 var builder = WebApplication.CreateBuilder(args);
+
+
+#if USE_HTTP_SYS
 
 if (OperatingSystem.IsWindows())
 {
-    builder.WebHost.UseHttpSys(options =>
-    {
-        options.AllowSynchronousIO = false;
-        options.Authentication.Schemes = AuthenticationSchemes.None;
-        options.Authentication.AllowAnonymous = true;
-        options.MaxConnections = null;
-        options.MaxRequestBodySize = 64 << 20;
-        options.UrlPrefixes.Add("http://localhost:8080");
-    });
+    builder.WebHost.UseHttpSys();
 }
-
-#else
-
-var builder = WebApplication.CreateBuilder(args);
-
+else
+{
+    builder.WebHost.UseKestrel();
+}
 #endif
 
 // Add services to the container.
