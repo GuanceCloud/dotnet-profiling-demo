@@ -7,15 +7,18 @@ using Microsoft.AspNetCore.Server.HttpSys;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.WebHost.UseHttpSys(options =>
+if (OperatingSystem.IsWindows())
 {
-    options.AllowSynchronousIO = false;
-    options.Authentication.Schemes = AuthenticationSchemes.None;
-    options.Authentication.AllowAnonymous = true;
-    options.MaxConnections = null;
-    options.MaxRequestBodySize = 64 << 20;
-    options.UrlPrefixes.Add("http://localhost:8080");
-});
+    builder.WebHost.UseHttpSys(options =>
+    {
+        options.AllowSynchronousIO = false;
+        options.Authentication.Schemes = AuthenticationSchemes.None;
+        options.Authentication.AllowAnonymous = true;
+        options.MaxConnections = null;
+        options.MaxRequestBodySize = 64 << 20;
+        options.UrlPrefixes.Add("http://localhost:8080");
+    });
+}
 
 #else
 
