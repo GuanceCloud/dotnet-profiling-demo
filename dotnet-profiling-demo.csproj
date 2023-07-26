@@ -5,9 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>dotnet_profiling_demo</RootNamespace>
+    <DefaultItemsExcludes>$(DefaultItemExcludes);build**;publish**;target**;</DefaultItemsExcludes>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="movies5000.json.gz" Exclude="bin\**\*;obj\**\*" 
+             CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <PackageReference Include="Datadog.Trace.Bundle" Version="2.33.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
