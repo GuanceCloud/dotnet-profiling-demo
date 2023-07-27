@@ -14,6 +14,16 @@ public class MoviesController : ControllerBase
 {
     private static List<Movie>? _cachedMovies;
 
+    public static int Fibonacci(int n)
+    {
+        if (n <= 2)
+        {
+            return 1;
+        }
+
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+    }
+
     // GET
     [HttpGet]
     public ActionResult<List<Movie>> Get()
@@ -25,6 +35,32 @@ public class MoviesController : ControllerBase
             query = q[0];
         }
 
+        var task1 = Task.Factory.StartNew(n =>
+        {
+            if (n is null)
+            {
+                throw new ArgumentException("invalid argument");
+            }
+
+            var num = (int)n;
+
+            Console.WriteLine("fibonacci({0}) = {1}", num, Fibonacci(num));
+
+        }, new Random().Next(40, 49));
+
+        var task2 = Task.Factory.StartNew(n =>
+        {
+            if (n is null)
+            {
+                return;
+            }
+
+            var num = (int)n;
+            
+            Console.WriteLine("fibonacci({0}) = {1}", num, Fibonacci(num));
+            
+        }, new Random().Next(40, 49));
+
         var movies = GetMovies();
         
         SortByDescReleaseDate(movies);
@@ -35,6 +71,8 @@ public class MoviesController : ControllerBase
             movies = movies.FindAll(movie => movie.Title is not null && movie.Title.ToUpper().Contains(query));
         }
 
+        task1.Wait();
+        task2.Wait();
         return movies;
     }
 

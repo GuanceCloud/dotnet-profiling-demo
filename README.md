@@ -69,7 +69,7 @@ curl 'http://127.0.0.1:8080/movies?q=batman'
 
 ## Profiling
 
-- On Linux/x86-64 (arm not supported yet)
+- On Linux (Arm not supported yet)
 
 ```shell
 (DDTRACE_HOME="$(pwd)/build/datadog"; 
@@ -92,3 +92,48 @@ build/dotnet-profiling-demo)
 ```
 
 - On Windows IIS
+
+Download and install https://github.com/DataDog/dd-trace-dotnet/releases/download/v2.34.0/datadog-dotnet-apm-2.34.0-x64.msi on your server.
+
+### .Net Core
+
+Edit your `web.config` at the web app root path, add `\<environmentVariables>\</environmentVariables>` node in `\<aspNetCore>\</aspNetCore>` node like below:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <location path="." inheritInChildApplications="false">
+        <system.webServer>
+            <handlers>
+                <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+            </handlers>
+            <aspNetCore processPath=".\dotnet-profiling-demo.exe" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" hostingModel="InProcess">
+              <environmentVariables>
+                <environmentVariable name="CORECLR_ENABLE_PROFILING" value="1" />
+                <environmentVariable name="CORECLR_PROFILER" value="{846F5F1C-F9AE-4B07-969E-05C26BC060D8}" />
+                <environmentVariable name="DD_PROFILING_ENABLED" value="1" />
+                <environmentVariable name="DD_PROFILING_CPU_ENABLED" value="1" />
+                <environmentVariable name="DD_PROFILING_WALLTIME_ENABLED" value="1" />
+                <environmentVariable name="DD_PROFILING_ALLOCATION_ENABLED" value="1" />
+                <environmentVariable name="DD_PROFILING_HEAP_ENABLED" value="1" />
+                <environmentVariable name="DD_PROFILING_EXCEPTION_ENABLED" value="1" />
+                <environmentVariable name="DD_PROFILING_LOCK_ENABLED" value="1" />
+                <environmentVariable name="DD_PROFILING_GC_ENABLED" value="1" />
+                <environmentVariable name="DD_ENV" value="production" />
+                <environmentVariable name="DD_VERSION" value="1.2.3" />
+                <environmentVariable name="DD_SERVICE" value="my-dotnet-core-app" />
+                <environmentVariable name="DD_AGENT_HOST" value="127.0.0.1" />
+                <environmentVariable name="DD_TRACE_AGENT_PORT" value="9529" />
+              </environmentVariables>
+            </aspNetCore>
+        </system.webServer>
+    </location>
+</configuration>
+```
+
+Restart your IIS
+
+```shell
+net stop /y was
+net start w3svc
+```
