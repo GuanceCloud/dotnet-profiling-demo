@@ -1,6 +1,9 @@
 // Uncomment below if you want to use HTTP.sys as the server
 //#define USE_HTTP_SYS
 
+using System.Collections;
+using System.Text;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -39,4 +42,19 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run("http://*:8080");
+app.MapGet("/",  () =>
+{
+    StringBuilder sb = new StringBuilder();
+
+    var environmentVariables = Environment.GetEnvironmentVariables();
+
+    foreach (DictionaryEntry variable in environmentVariables)
+    {
+        sb.AppendFormat("{0}\t\t{1}\n", variable.Key, variable.Value);
+    }
+    
+
+    return sb.ToString();
+});
+
+app.Run();
