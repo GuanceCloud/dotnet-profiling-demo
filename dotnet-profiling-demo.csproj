@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="movies5000.json.gz" Exclude="bin\**\*;obj\**\*" 
-             CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="movies5000.json.gz" Exclude="bin/**/*;obj/**/*;build/**/*;publish/**/*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Update="bin/**/*;obj/**/*;build/**/*;publish/**/*" CopyToPublishDirectory="Never" />
     <PackageReference Include="Datadog.Trace.Bundle" Version="2.33.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />

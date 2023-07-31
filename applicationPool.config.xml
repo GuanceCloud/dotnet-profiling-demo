@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    
+    <system.applicationHost>
+        
+        <applicationPools>
+            
+            <!-- 
+            Below configuration create an application pool named "DotnetFramework" on IIS,
+            it is only applicable to Windows IIS10+.
+            -->
+            <add name="DotnetFramework" managedRuntimeVersion="v4.0">
+                <environmentVariables>
+                    <add name="COR_ENABLE_PROFILING" value="1" />
+                    <add name="COR_PROFILER" value="{846F5F1C-F9AE-4B07-969E-05C26BC060D8}" />
+                    <add name="DD_PROFILING_ENABLED" value="1" />
+                    <add name="DD_PROFILING_CPU_ENABLED" value="1" />
+                    <add name="DD_PROFILING_WALLTIME_ENABLED" value="1" />
+                    <add name="DD_PROFILING_ALLOCATION_ENABLED" value="1" />
+                    <add name="DD_PROFILING_HEAP_ENABLED" value="1" />
+                    <add name="DD_PROFILING_EXCEPTION_ENABLED" value="1" />
+                    <add name="DD_PROFILING_LOCK_ENABLED" value="1" />
+                    <add name="DD_PROFILING_GC_ENABLED" value="1" />
+                    <add name="DD_SERVICE" value="my-dotnet-app" />
+                    <add name="DD_VERSION" value="1.2.3" />
+                    <add name="DD_ENV" value="production" />
+                    <add name="DD_AGENT_HOST" value="127.0.0.1" />
+                    <add name="DD_TRACE_AGENT_PORT" value="9529" />
+                </environmentVariables>
+            </add>
+            
+        </applicationPools>
+    </system.applicationHost>
+</configuration>
