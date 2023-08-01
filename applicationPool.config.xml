@@ -12,6 +12,7 @@
             -->
             <add name="DotnetFramework" managedRuntimeVersion="v4.0">
                 <environmentVariables>
+                    <add name="DD_PROFILING_LOG_DIR" value="logs/ddtrace.log" />
                     <add name="COR_ENABLE_PROFILING" value="1" />
                     <add name="COR_PROFILER" value="{846F5F1C-F9AE-4B07-969E-05C26BC060D8}" />
                     <add name="DD_PROFILING_ENABLED" value="1" />
