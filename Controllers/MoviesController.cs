@@ -5,6 +5,8 @@ using dotnet_profiling_demo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
+using Datadog.Trace.Annotations;
+using Microsoft.Extensions.Localization;
 
 namespace dotnet_profiling_demo.Controllers;
 
@@ -14,6 +16,7 @@ public class MoviesController : ControllerBase
 {
     private static List<Movie>? _cachedMovies;
 
+    [Trace(OperationName = "Fibonacci", ResourceName = "Movies")]
     public static int Fibonacci(int n)
     {
         if (n <= 2)
@@ -26,6 +29,7 @@ public class MoviesController : ControllerBase
 
     // GET
     [HttpGet]
+    [Trace(OperationName = "Get")]
     public ActionResult<List<Movie>> Get()
     {
         StringValues q;
@@ -76,6 +80,7 @@ public class MoviesController : ControllerBase
         return movies;
     }
 
+    [Trace(OperationName = "sort")]
     private static void SortByDescReleaseDate(List<Movie> movies)
     {
         movies.Sort((movie1, movie2) =>
@@ -96,6 +101,7 @@ public class MoviesController : ControllerBase
         });
     }
 
+    [Trace(OperationName = "GetMovies")]
     private static List<Movie> GetMovies()
     {
         if (_cachedMovies is not null)
@@ -106,6 +112,7 @@ public class MoviesController : ControllerBase
         return _cachedMovies = LoadMovies();
     }
 
+    [Trace(OperationName = "LoadMovies")]
     private static List<Movie> LoadMovies()
     {
         if (_cachedMovies is not null)

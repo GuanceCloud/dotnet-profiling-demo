@@ -44,7 +44,7 @@ app.MapControllers();
 
 app.MapGet("/",  () =>
 {
-    StringBuilder sb = new StringBuilder();
+    StringBuilder sb = new();
 
     var environmentVariables = Environment.GetEnvironmentVariables();
 
