@@ -16,7 +16,6 @@ public class MoviesController : ControllerBase
 {
     private static List<Movie>? _cachedMovies;
 
-    [Trace(OperationName = "Fibonacci", ResourceName = "Movies")]
     public static int Fibonacci(int n)
     {
         if (n <= 2)
@@ -24,7 +23,17 @@ public class MoviesController : ControllerBase
             return 1;
         }
 
-        return Fibonacci(n - 1) + Fibonacci(n - 2);
+        return (n % 5 == 0 ? FibonacciWithTrace(n-1) : Fibonacci(n - 1)) + 
+        ( n % 6 == 0 ? FibonacciWithTrace(n-2) : Fibonacci(n - 2));
+    }
+
+    [Trace(OperationName = "Fib")]
+    public static int FibonacciWithTrace(int n)
+    {
+        if (n <= 2) {
+            return 1;
+        }
+        return Fibonacci(n-1) + Fibonacci(n-2);
     }
 
     // GET
