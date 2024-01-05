@@ -23,8 +23,8 @@ public class MoviesController : ControllerBase
             return 1;
         }
 
-        return (n % 5 == 0 ? FibonacciWithTrace(n-1) : Fibonacci(n - 1)) + 
-        ( n % 6 == 0 ? FibonacciWithTrace(n-2) : Fibonacci(n - 2));
+        return (n % 31 == 0 ? FibonacciWithTrace(n-1) : Fibonacci(n - 1)) + 
+        ( n % 37 == 0 ? FibonacciWithTrace(n-2) : Fibonacci(n - 2));
     }
 
     [Trace(OperationName = "Fib")]
@@ -59,7 +59,7 @@ public class MoviesController : ControllerBase
 
             Console.WriteLine("fibonacci({0}) = {1}", num, Fibonacci(num));
 
-        }, new Random().Next(40, 49));
+        }, new Random().Next(40, 45));
 
         var task2 = Task.Factory.StartNew(n =>
         {
@@ -72,7 +72,7 @@ public class MoviesController : ControllerBase
             
             Console.WriteLine("fibonacci({0}) = {1}", num, Fibonacci(num));
             
-        }, new Random().Next(40, 49));
+        }, new Random().Next(40, 45));
 
         var movies = GetMovies();
         
